@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Markdown Conversion</title>
+  <link rel="stylesheet" href="./public/github-markdown.css">
+  <link rel="stylesheet" href="./public/default.css">
+  <style>
+    .markdown-body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
+  </style>
+</head>
+<body class="markdown-body">
+  <h1>H1</h1>
+<h2>H2</h2>
+<h3>H3</h3>
+<h4>H4</h4>
+<p><strong>bold text</strong></p>
+<p><em>italicized text</em></p>
+<blockquote>
+<p>blockquote</p>
+</blockquote>
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ol>
+<ul>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ul>
+<p><code>code</code></p>
+<hr>
+<pre><code class="hljs"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">&quot;This is some javascript included in a markdown code block, and it will be converted to valid HTML with code syntax highlighting.&quot;</span>);
+}
+</code></pre>
+<p><kbd>this is a keyboard input html element</kbd></p>
+<pre><code class="hljs"><span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>this will remain html even after the Markdown is converted to HTML<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+</code></pre>
+<p><a href="https://www.devextent.com">Dev Extent</a></p>
+<p><img src="https://www.devextent.com/images/devextent.png" alt="Dev Extent"></p>
+
+</body>
+</html>

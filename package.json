@@ -1,0 +1,46 @@
+{
+  "name": "markdown-to-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "bin": {
+    "mdc": "./dist/index.js"
+  },
+  "scripts": {
+    "start": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
+    "start:windows": "nodemon --watch 'src/**/*.ts' --exec \"npx ts-node\" src/index.ts",
+    "create": "npm run build && npm run test",
+    "build": "npx tsc",
+    "local": "sudo npm i -g && mdc",
+    "refresh": "rm -rf ./node_modules ./package-lock.json && npm install"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "@babel/preset-typescript": "^7.24.1",
+    "@types/fs-extra": "^11.0.4",
+    "@types/markdown-it": "^14.0.1",
+    "@types/node": "^20.12.7",
+    "cross-env": "^7.0.3",
+    "fs-extra": "^11.2.0",
+    "highlight.js": "^11.9.0",
+    "install": "^0.13.0",
+    "markdown-it": "^14.1.0",
+    "nodemon": "^3.1.0",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "clear": "^0.1.0",
+    "commander": "^12.0.0",
+    "figlet": "^1.7.0",
+    "github-markdown-css": "^5.5.1",
+    "path": "^0.12.7"
+  }
+
+}
